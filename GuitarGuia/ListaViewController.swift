@@ -17,17 +17,27 @@ class ListaViewController: UIViewController {
     @IBOutlet weak var buttonPlay: UIBarButtonItem!
     
     @IBOutlet weak var buttonPause: UIBarButtonItem!
-    //MARK: Propriedades
+    
+    @IBOutlet weak var labelNomeExercicio: UILabel!
+    
+    @IBOutlet weak var labelTempo: UILabel!
+    
+    @IBOutlet weak var textViewObservacoes: UITextView!
+    
+    
+       //MARK: Propriedades
     
     var segundos: [String] = []
     var horas : [String] = []
     var minutos : [String] = []
     
     var segundosAtuais = 0
-    let opcoes = ["Hrs", "Mins", "Segs"]
+    //let opcoes = ["Hrs", "Mins", "Segs"]
     let qtdRows = [24, 60, 60]
     
     var temporizador = Timer()
+    
+   // var exercicioSelecionado = 
     //MARK: ViewDidLoad
     
     override func viewDidLoad() {
@@ -35,6 +45,13 @@ class ListaViewController: UIViewController {
         
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
+        
+        
+
+        labelNomeExercicio.text = "\(arrayDados[indiceEdicao].value(forKey: campoExercicio)!)"
+            labelTempo.text = "\(arrayDados[indiceEdicao].value(forKey: campoTempo)!)"
+            textViewObservacoes.text = "\(arrayDados[indiceEdicao].value(forKey: campoObservacoes)!)"
+            
         
         
     }// Fechamento ViewDidLoad
@@ -97,6 +114,7 @@ class ListaViewController: UIViewController {
 }
 extension ListaViewController : UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
         return 3
     }
     
@@ -112,8 +130,8 @@ extension ListaViewController : UIPickerViewDataSource {
 extension ListaViewController: UIPickerViewDelegate{
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        return "\(row) \(self.opcoes[component])"
+    
+        return "\(row)"
     }
     
 } // Fechamento Delegate

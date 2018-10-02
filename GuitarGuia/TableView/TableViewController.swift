@@ -14,8 +14,6 @@ class TableViewController: UITableViewController {
 
     override func viewDidAppear(_ animated: Bool) {
     
-    
-        
         // Resgatando os dados do banco
         let pesquisa = NSFetchRequest<NSFetchRequestResult>(entityName: tabela)
         
@@ -36,18 +34,25 @@ class TableViewController: UITableViewController {
 
     }
 
-    
-          // MARK: - Table view data source
+    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+      
         return arrayDados.count
         
+    }
+    
+     // Metodos de UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        indiceEdicao = indexPath.row
+        
+        performSegue(withIdentifier: "irTelaTimer", sender: nil)
     }
 
   
@@ -59,12 +64,12 @@ class TableViewController: UITableViewController {
         
         return cell
   
-    }
-    // Override to support conditional editing of the table view.
+    } // Fechamento cellForRowAt
+    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         
         return true
-    }
+    } // Fechamento CanEditRowAt
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -85,8 +90,9 @@ class TableViewController: UITableViewController {
                 
             }
             
-            
         }
    
-    }
+    } // Fechamento Editing Style
+    
+  
 }

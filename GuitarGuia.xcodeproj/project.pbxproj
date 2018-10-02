@@ -11,7 +11,6 @@
 		782C05F3215487B800FA6084 /* Globais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C05F2215487B800FA6084 /* Globais.swift */; };
 		782C05F52154A1C300FA6084 /* MinhaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782C05F42154A1C300FA6084 /* MinhaTableViewCell.swift */; };
 		782E05902150812E007A9576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E058F2150812E007A9576 /* AppDelegate.swift */; };
-		782E05922150812F007A9576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E05912150812F007A9576 /* ViewController.swift */; };
 		782E05952150812F007A9576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782E05932150812F007A9576 /* Main.storyboard */; };
 		782E059721508132007A9576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782E059621508132007A9576 /* Assets.xcassets */; };
 		782E059A21508132007A9576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782E059821508132007A9576 /* LaunchScreen.storyboard */; };
@@ -26,7 +25,6 @@
 		782C05F42154A1C300FA6084 /* MinhaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaTableViewCell.swift; sourceTree = "<group>"; };
 		782E058C2150812E007A9576 /* GuitarGuia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarGuia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782E058F2150812E007A9576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		782E05912150812F007A9576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		782E05942150812F007A9576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		782E059621508132007A9576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782E059921508132007A9576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				782E058F2150812E007A9576 /* AppDelegate.swift */,
-				782E05912150812F007A9576 /* ViewController.swift */,
 				782E05A121508656007A9576 /* ListaViewController.swift */,
 				782E05932150812F007A9576 /* Main.storyboard */,
 				782C05F2215487B800FA6084 /* Globais.swift */,
@@ -172,7 +169,6 @@
 				782C05F12154696B00FA6084 /* GuitarGuia.xcdatamodeld in Sources */,
 				782C05F3215487B800FA6084 /* Globais.swift in Sources */,
 				782E05A221508656007A9576 /* ListaViewController.swift in Sources */,
-				782E05922150812F007A9576 /* ViewController.swift in Sources */,
 				782E05902150812E007A9576 /* AppDelegate.swift in Sources */,
 				782E05AD2151D833007A9576 /* CadastroViewController.swift in Sources */,
 				782C05F52154A1C300FA6084 /* MinhaTableViewCell.swift in Sources */,
